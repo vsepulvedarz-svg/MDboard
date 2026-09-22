@@ -1,0 +1,35 @@
+PRIMERA REVISIÓN CON UN AGENTE LOCAL
+
+El dashboard está en D:\DashboardMichelle. Lee GEMINI.md y actualiza el proyecto
+"NOMBRE DEL PROYECTO" (o ID exacto) de la carpeta projects. La URL de antecedentes
+está en su JSON. Usa tools/project-pipeline.js para preparar y aplicar la revisión.
+Inventaría subcarpetas, lee archivos nuevos, modificados o pendientes y conserva
+fuentes, revisiones, consultas, equipo e historial. Respeta ajustes manuales.
+No inventes datos ni accesos. Informa la versión resultante y los archivos leídos,
+reutilizados e inaccesibles.
+
+SI LOS ANTECEDENTES ESTÁN SINCRONIZADOS EN EL EQUIPO, AGREGA
+
+La carpeta local que corresponde a la URL de Drive del proyecto es "RUTA LOCAL".
+Puedes leer esos antecedentes. Registra rutas relativas y metadatos reales;
+no inventes IDs ni versiones de Drive.
+
+SIGUIENTES REVISIONES
+
+Actualiza nuevamente el proyecto "NOMBRE O ID" siguiendo GEMINI.md. Prepara una
+revisión nueva desde el JSON vigente. Compara el inventario actual contra
+processedFiles y lee solo lo nuevo, modificado, pendiente o solicitado para
+relectura. Aplica el resultado mediante el pipeline y reporta la cobertura.
+
+SI EL AGENTE SE INTERRUMPIÓ
+
+Revisa status del pipeline para "NOMBRE O ID" y retoma el run pendiente. Si
+confirmamos que el agente anterior ya no está trabajando y no se puede continuar,
+cancela ese run con abort y prepara una revisión nueva.
+
+ALTERNATIVA MANUAL PARA UN CHAT WEB
+
+Adjunto el JSON recién descargado desde la revisión manual del dashboard y sus
+instrucciones. Revisa los antecedentes autorizados, conserva reviewContext y
+entrega el JSON completo como respuesta separada. Yo lo importaré y revisaré las
+diferencias en el dashboard. No reemplaces directamente el JSON padre.

@@ -1,0 +1,1443 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proyecto CCM/VDF",
+  "description": "Contrato de intercambio del JSON padre. model.js valida además la definición exacta de los 145 controles, referencias, evidencia obligatoria, versiones, fechas reales y cierre. Las revisiones de IA conservan el JSON completo y reviewContext.",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "const": "ccm-vdf-project"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "templateVersion": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "info": {
+      "type": "object",
+      "properties": {
+        "client": {
+          "type": "string"
+        },
+        "buyer": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "crm": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "manager": {
+          "type": "string"
+        },
+        "driveUrl": {
+          "type": "string"
+        },
+        "offerReason": {
+          "type": "string"
+        },
+        "startDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+            },
+            {
+              "const": ""
+            }
+          ]
+        },
+        "targetDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+            },
+            {
+              "const": ""
+            }
+          ]
+        },
+        "technology": {
+          "enum": [
+            "undetermined",
+            "ccm",
+            "vdf",
+            "ccm_vdf"
+          ]
+        },
+        "offerStatus": {
+          "enum": [
+            "unreviewed",
+            "firm",
+            "reference",
+            "blocked",
+            "review"
+          ]
+        }
+      },
+      "required": [
+        "client",
+        "buyer",
+        "name",
+        "crm",
+        "location",
+        "manager",
+        "driveUrl",
+        "offerReason",
+        "startDate",
+        "targetDate",
+        "technology",
+        "offerStatus"
+      ],
+      "additionalProperties": true
+    },
+    "lifecycle": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "active",
+            "closed"
+          ]
+        },
+        "closure": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/closure"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "closure"
+      ],
+      "additionalProperties": true
+    },
+    "calendar": {
+      "$ref": "#/$defs/calendar"
+    },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/checklist"
+      },
+      "minItems": 145,
+      "maxItems": 145
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/document"
+      }
+    },
+    "revisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/revision"
+      }
+    },
+    "queries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/query"
+      }
+    },
+    "team": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/contact"
+      }
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/history"
+      }
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/review"
+      }
+    },
+    "analysis": {
+      "$ref": "#/$defs/analysis"
+    },
+    "reviewContext": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/reviewContext"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "processedFiles": {
+      "type": "array",
+      "description": "Inventario acumulado con carpeta de Drive, rutas, metadatos y última versión procesada. Opcional solo para importar JSON anteriores.",
+      "items": {
+        "$ref": "#/$defs/processedFile"
+      }
+    }
+  },
+  "required": [
+    "kind",
+    "schemaVersion",
+    "templateVersion",
+    "id",
+    "version",
+    "createdAt",
+    "updatedAt",
+    "info",
+    "lifecycle",
+    "calendar",
+    "checklist",
+    "documents",
+    "revisions",
+    "queries",
+    "team",
+    "history",
+    "reviews",
+    "analysis",
+    "reviewContext"
+  ],
+  "additionalProperties": true,
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "documentId": {
+          "type": "string"
+        },
+        "fileName": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "path": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "locator": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "fileName",
+        "locator",
+        "quote"
+      ],
+      "additionalProperties": true
+    },
+    "calendar": {
+      "type": "object",
+      "properties": {
+        "country": {
+          "const": "CL"
+        },
+        "timeZone": {
+          "const": "America/Santiago"
+        },
+        "countingRule": {
+          "const": "exclude_start_include_end"
+        },
+        "coverage": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "year": {
+                "type": "integer",
+                "minimum": 2000,
+                "maximum": 2099
+              },
+              "complete": {
+                "type": "boolean"
+              },
+              "source": {
+                "type": "string",
+                "maxLength": 20000,
+                "minLength": 1
+              },
+              "verifiedAt": {
+                "type": "string",
+                "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+              },
+              "scope": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "year",
+              "complete",
+              "source",
+              "verifiedAt"
+            ],
+            "additionalProperties": true
+          }
+        },
+        "holidays": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+              },
+              "date": {
+                "type": "string",
+                "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+              },
+              "name": {
+                "type": "string",
+                "maxLength": 20000,
+                "minLength": 1
+              },
+              "scope": {
+                "enum": [
+                  "national",
+                  "regional",
+                  "local",
+                  "company"
+                ]
+              },
+              "source": {
+                "type": "string",
+                "maxLength": 20000,
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "date",
+              "name",
+              "scope",
+              "source"
+            ],
+            "additionalProperties": true
+          }
+        }
+      },
+      "required": [
+        "country",
+        "timeZone",
+        "countingRule",
+        "coverage",
+        "holidays"
+      ],
+      "additionalProperties": true
+    },
+    "document": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "path": {
+          "type": "string"
+        },
+        "familyId": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "mimeType": {
+          "type": "string"
+        },
+        "readStatus": {
+          "enum": [
+            "read",
+            "unreadable",
+            "metadata_only",
+            "not_reviewed"
+          ]
+        },
+        "manualLock": {
+          "type": "boolean"
+        },
+        "updatedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "path",
+        "familyId",
+        "revision",
+        "url",
+        "notes",
+        "mimeType",
+        "readStatus"
+      ],
+      "additionalProperties": true
+    },
+    "revision": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "familyId": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "fromRevision": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "toRevision": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "fromDocumentId": {
+          "type": "string"
+        },
+        "toDocumentId": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "justification": {
+          "type": "string"
+        },
+        "justificationStatus": {
+          "enum": [
+            "documented",
+            "inferred",
+            "unknown"
+          ]
+        },
+        "impact": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "manualLock": {
+          "type": "boolean"
+        },
+        "updatedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "familyId",
+        "fromRevision",
+        "toRevision",
+        "fromDocumentId",
+        "toDocumentId",
+        "summary",
+        "justification",
+        "justificationStatus",
+        "impact",
+        "evidence"
+      ],
+      "additionalProperties": true
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "role": {
+          "type": "string"
+        },
+        "company": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "manualLock": {
+          "type": "boolean"
+        },
+        "updatedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "role",
+        "company",
+        "phone",
+        "email",
+        "notes"
+      ],
+      "additionalProperties": true
+    },
+    "message": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "author": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "at",
+        "author",
+        "body",
+        "evidence"
+      ],
+      "additionalProperties": true
+    },
+    "query": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "question": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "assignedTo": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "open",
+            "closed"
+          ]
+        },
+        "resolution": {
+          "type": "string"
+        },
+        "closedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "createdBy": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "relatedChecklistIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "messages": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/message"
+          }
+        },
+        "manualLock": {
+          "type": "boolean"
+        },
+        "updatedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "question",
+        "assignedTo",
+        "status",
+        "resolution",
+        "closedAt",
+        "createdAt",
+        "createdBy",
+        "relatedChecklistIds",
+        "evidence",
+        "messages"
+      ],
+      "additionalProperties": true
+    },
+    "checklist": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "section": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "page": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 23
+        },
+        "label": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "criterion": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "pillar": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "critical": {
+          "type": "boolean"
+        },
+        "requirementSource": {
+          "type": "object",
+          "properties": {
+            "file": {
+              "const": "Requerimientos_minimos_CCM_VDF.pdf"
+            },
+            "page": {
+              "type": "integer"
+            },
+            "section": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "file",
+            "page",
+            "section"
+          ],
+          "additionalProperties": true
+        },
+        "state": {
+          "enum": [
+            "unreviewed",
+            "available",
+            "missing",
+            "partial",
+            "conflict",
+            "not_applicable"
+          ]
+        },
+        "value": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "manualLock": {
+          "type": "boolean"
+        },
+        "updatedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "source": {
+          "enum": [
+            "unreviewed",
+            "manual",
+            "ai"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "section",
+        "page",
+        "label",
+        "criterion",
+        "pillar",
+        "critical",
+        "requirementSource",
+        "state",
+        "value",
+        "notes",
+        "evidence",
+        "manualLock",
+        "updatedAt",
+        "updatedBy",
+        "source"
+      ],
+      "additionalProperties": true
+    },
+    "analysis": {
+      "type": "object",
+      "properties": {
+        "provider": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "reviewedAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "const": ""
+            }
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "coverage": {
+          "type": "object",
+          "properties": {
+            "folderUrl": {
+              "type": "string"
+            },
+            "recursive": {
+              "type": "boolean"
+            },
+            "discovered": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "read": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "unreadable": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "notes": {
+              "type": "string"
+            },
+            "reused": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Archivos omitidos tras confirmar metadatos sin cambios en esta revisión."
+            }
+          },
+          "required": [
+            "folderUrl",
+            "recursive",
+            "discovered",
+            "read",
+            "unreadable",
+            "notes"
+          ],
+          "additionalProperties": true
+        }
+      },
+      "required": [
+        "provider",
+        "model",
+        "reviewedAt",
+        "summary",
+        "coverage"
+      ],
+      "additionalProperties": true
+    },
+    "history": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "actor": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "origin": {
+          "enum": [
+            "manual",
+            "ai_review",
+            "ai_automation"
+          ]
+        },
+        "kind": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "changes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string",
+                "maxLength": 20000,
+                "minLength": 1
+              },
+              "before": {},
+              "after": {}
+            },
+            "required": [
+              "path",
+              "before",
+              "after"
+            ],
+            "additionalProperties": true
+          }
+        }
+      },
+      "required": [
+        "id",
+        "at",
+        "actor",
+        "origin",
+        "kind",
+        "reason",
+        "changes"
+      ],
+      "additionalProperties": true
+    },
+    "calculation": {
+      "type": "object",
+      "properties": {
+        "days": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "calendarDays": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "weekendDays": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "holidayDays": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "excludedHolidays": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "missingYears": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "complete": {
+          "type": "boolean"
+        },
+        "rule": {
+          "const": "exclude_start_include_end"
+        }
+      },
+      "required": [
+        "days",
+        "calendarDays",
+        "weekendDays",
+        "holidayDays",
+        "excludedHolidays",
+        "missingYears",
+        "complete",
+        "rule"
+      ],
+      "additionalProperties": true
+    },
+    "closure": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+        },
+        "startDate": {
+          "type": "string",
+          "pattern": "^20[0-9]{2}-[0-9]{2}-[0-9]{2}$"
+        },
+        "at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "actor": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "maxLength": 20000,
+          "minLength": 1
+        },
+        "outcome": {
+          "enum": [
+            "sent",
+            "won",
+            "lost",
+            "cancelled",
+            "completed"
+          ]
+        },
+        "calculation": {
+          "$ref": "#/$defs/calculation"
+        },
+        "calendarSnapshot": {
+          "$ref": "#/$defs/calendar"
+        },
+        "openQueries": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "date",
+        "startDate",
+        "at",
+        "actor",
+        "reason",
+        "outcome",
+        "calculation",
+        "calendarSnapshot",
+        "openQueries"
+      ],
+      "additionalProperties": true
+    },
+    "reviewContext": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "const": "ai-review"
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "baseVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "baseDigest": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "exportedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "kind",
+        "requestId",
+        "baseVersion",
+        "baseDigest",
+        "exportedAt"
+      ],
+      "additionalProperties": true
+    },
+    "review": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "enum": ["manual", "automatic"]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "actor": {
+          "type": "string"
+        },
+        "provider": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "baseVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "accepted": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "analysis": {
+          "$ref": "#/$defs/analysis"
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "decisions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "collection": {
+                "enum": [
+                  "info",
+                  "checklist",
+                  "documents",
+                  "revisions",
+                  "queries",
+                  "team",
+                  "processedFiles"
+                ]
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+              },
+              "label": {
+                "type": "string"
+              },
+              "before": {},
+              "after": {},
+              "locked": {
+                "type": "boolean"
+              },
+              "accepted": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "key",
+              "collection",
+              "id",
+              "label",
+              "before",
+              "after",
+              "locked",
+              "accepted"
+            ],
+            "additionalProperties": true
+          }
+        }
+      },
+      "required": [
+        "id",
+        "at",
+        "actor",
+        "provider",
+        "model",
+        "baseVersion",
+        "accepted",
+        "analysis",
+        "warnings",
+        "decisions"
+      ],
+      "additionalProperties": true
+    },
+    "fileMetadata": {
+      "type": "object",
+      "properties": {
+        "modifiedTime": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "const": ""
+            }
+          ]
+        },
+        "sizeBytes": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "version": {
+          "type": "string"
+        },
+        "checksumAlgorithm": {
+          "enum": [
+            "",
+            "md5",
+            "sha1",
+            "sha256"
+          ]
+        },
+        "checksum": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "modifiedTime",
+        "sizeBytes",
+        "version",
+        "checksumAlgorithm",
+        "checksum"
+      ],
+      "additionalProperties": true
+    },
+    "fileSource": {
+      "type": "object",
+      "properties": {
+        "folderUrl": {
+          "type": "string",
+          "minLength": 1
+        },
+        "driveFileId": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "folderUrl",
+        "driveFileId",
+        "path",
+        "url"
+      ],
+      "additionalProperties": true
+    },
+    "processedFile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,120}$"
+        },
+        "documentId": {
+          "type": "string"
+        },
+        "driveFileId": {
+          "type": "string"
+        },
+        "folderUrl": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fileName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string"
+        },
+        "lastSeenAt": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "availability": {
+          "enum": [
+            "present",
+            "not_seen",
+            "removed"
+          ]
+        },
+        "observed": {
+          "$ref": "#/$defs/fileMetadata"
+        },
+        "processing": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "processed",
+                "partial",
+                "failed"
+              ]
+            },
+            "processedAt": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "provider": {
+              "type": "string"
+            },
+            "source": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/fileSource"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "fingerprint": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/fileMetadata"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "forceReview": {
+              "type": "boolean"
+            },
+            "notes": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "processedAt",
+            "provider",
+            "source",
+            "fingerprint",
+            "forceReview",
+            "notes"
+          ],
+          "additionalProperties": true
+        },
+        "manualLock": {
+          "type": "boolean"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedBy": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "documentId",
+        "driveFileId",
+        "folderUrl",
+        "fileName",
+        "path",
+        "url",
+        "lastSeenAt",
+        "availability",
+        "observed",
+        "processing"
+      ],
+      "additionalProperties": true
+    }
+  }
+}

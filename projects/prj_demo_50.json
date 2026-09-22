@@ -1,0 +1,4520 @@
+{
+  "kind": "ccm-vdf-project",
+  "schemaVersion": 1,
+  "templateVersion": "1.0",
+  "id": "prj_demo_50",
+  "version": 2,
+  "createdAt": "2026-09-22T15:00:00.000Z",
+  "updatedAt": "2026-09-22T15:00:00.000Z",
+  "info": {
+    "client": "Minera Horizonte SpA (DEMO)",
+    "buyer": "Ingeniería Andina EPC (DEMO)",
+    "name": "Ampliación Planta Solar Atacama – Fase II (DEMO)",
+    "crm": "CRM-DEMO-2026-050",
+    "location": "Antofagasta, Chile",
+    "manager": "Camila Torres (DEMO)",
+    "driveUrl": "",
+    "startDate": "2026-09-15",
+    "targetDate": "2026-11-30",
+    "technology": "ccm_vdf",
+    "offerStatus": "review",
+    "offerReason": "Ejemplo ficticio al 50%; requiere completar antecedentes críticos antes de emitir una oferta firme."
+  },
+  "lifecycle": {
+    "status": "active",
+    "closure": null
+  },
+  "calendar": {
+    "country": "CL",
+    "timeZone": "America/Santiago",
+    "countingRule": "exclude_start_include_end",
+    "coverage": [
+      {
+        "year": 2025,
+        "complete": true,
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/",
+        "verifiedAt": "2026-09-21",
+        "scope": "national"
+      },
+      {
+        "year": 2026,
+        "complete": true,
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/",
+        "verifiedAt": "2026-09-21",
+        "scope": "national"
+      }
+    ],
+    "holidays": [
+      {
+        "id": "cl-2025-01-01",
+        "date": "2025-01-01",
+        "name": "Año Nuevo",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-04-18",
+        "date": "2025-04-18",
+        "name": "Viernes Santo",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-04-19",
+        "date": "2025-04-19",
+        "name": "Sábado Santo",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-05-01",
+        "date": "2025-05-01",
+        "name": "Día del Trabajo",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-05-21",
+        "date": "2025-05-21",
+        "name": "Glorias Navales",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-06-20",
+        "date": "2025-06-20",
+        "name": "Pueblos Indígenas",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-06-29",
+        "date": "2025-06-29",
+        "name": "San Pedro y San Pablo / primarias",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-07-16",
+        "date": "2025-07-16",
+        "name": "Virgen del Carmen",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-08-15",
+        "date": "2025-08-15",
+        "name": "Asunción de la Virgen",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-09-18",
+        "date": "2025-09-18",
+        "name": "Independencia Nacional",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-09-19",
+        "date": "2025-09-19",
+        "name": "Glorias del Ejército",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-10-12",
+        "date": "2025-10-12",
+        "name": "Encuentro de Dos Mundos",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-10-31",
+        "date": "2025-10-31",
+        "name": "Iglesias Evangélicas y Protestantes",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-11-01",
+        "date": "2025-11-01",
+        "name": "Todos los Santos",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-11-16",
+        "date": "2025-11-16",
+        "name": "Elecciones presidenciales y parlamentarias",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-12-08",
+        "date": "2025-12-08",
+        "name": "Inmaculada Concepción",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-12-14",
+        "date": "2025-12-14",
+        "name": "Segunda vuelta presidencial",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2025-12-25",
+        "date": "2025-12-25",
+        "name": "Navidad",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/calendario-feriados-2025-festivos-irrenunciables-legales/"
+      },
+      {
+        "id": "cl-2026-01-01",
+        "date": "2026-01-01",
+        "name": "Año Nuevo",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-04-03",
+        "date": "2026-04-03",
+        "name": "Viernes Santo",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-04-04",
+        "date": "2026-04-04",
+        "name": "Sábado Santo",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-05-01",
+        "date": "2026-05-01",
+        "name": "Día del Trabajo",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-05-21",
+        "date": "2026-05-21",
+        "name": "Glorias Navales",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-06-21",
+        "date": "2026-06-21",
+        "name": "Pueblos Indígenas",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-06-29",
+        "date": "2026-06-29",
+        "name": "San Pedro y San Pablo",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-07-16",
+        "date": "2026-07-16",
+        "name": "Virgen del Carmen",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-08-15",
+        "date": "2026-08-15",
+        "name": "Asunción de la Virgen",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-09-18",
+        "date": "2026-09-18",
+        "name": "Independencia Nacional",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-09-19",
+        "date": "2026-09-19",
+        "name": "Glorias del Ejército",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-10-12",
+        "date": "2026-10-12",
+        "name": "Encuentro de Dos Mundos",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-10-31",
+        "date": "2026-10-31",
+        "name": "Iglesias Evangélicas y Protestantes",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-11-01",
+        "date": "2026-11-01",
+        "name": "Todos los Santos",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-12-08",
+        "date": "2026-12-08",
+        "name": "Inmaculada Concepción",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      },
+      {
+        "id": "cl-2026-12-25",
+        "date": "2026-12-25",
+        "name": "Navidad",
+        "scope": "national",
+        "source": "https://www.gob.cl/noticias/feriados-2026-revisa-cuantos-habra-y-cuales-son-irrenunciables/"
+      }
+    ]
+  },
+  "checklist": [
+    {
+      "id": "r1-01",
+      "section": 1,
+      "page": 2,
+      "label": "ID CRM o número de negocio",
+      "criterion": "Debe existir una identificación única para controlar versiones, descuentos y seguimiento.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 2,
+        "section": 1
+      },
+      "state": "available",
+      "value": "Dato mock validado para r1-01.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r1-01",
+          "documentId": "doc_demo_comercial",
+          "fileName": "Bases comerciales DEMO.pdf",
+          "path": "01_Comercial/Bases_comerciales_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r1-01",
+          "quote": "Evidencia ficticia de demostración para el control r1-01.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r1-02",
+      "section": 1,
+      "page": 2,
+      "label": "Cliente y cliente final",
+      "criterion": "Distinguir al comprador directo del usuario final y de la ingeniería o EPC involucrada.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 2,
+        "section": 1
+      },
+      "state": "available",
+      "value": "Dato mock validado para r1-02.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r1-02",
+          "documentId": "doc_demo_comercial",
+          "fileName": "Bases comerciales DEMO.pdf",
+          "path": "01_Comercial/Bases_comerciales_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r1-02",
+          "quote": "Evidencia ficticia de demostración para el control r1-02.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r1-03",
+      "section": 1,
+      "page": 2,
+      "label": "Nombre del proyecto",
+      "criterion": "Utilizar el nombre oficial y el número de licitación cuando exista.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 2,
+        "section": 1
+      },
+      "state": "available",
+      "value": "Dato mock validado para r1-03.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r1-03",
+          "documentId": "doc_demo_comercial",
+          "fileName": "Bases comerciales DEMO.pdf",
+          "path": "01_Comercial/Bases_comerciales_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r1-03",
+          "quote": "Evidencia ficticia de demostración para el control r1-03.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r1-04",
+      "section": 1,
+      "page": 2,
+      "label": "Responsable comercial",
+      "criterion": "Definir quién centraliza las comunicaciones con el cliente.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 2,
+        "section": 1
+      },
+      "state": "available",
+      "value": "Dato mock validado para r1-04.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r1-04",
+          "documentId": "doc_demo_comercial",
+          "fileName": "Bases comerciales DEMO.pdf",
+          "path": "01_Comercial/Bases_comerciales_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r1-04",
+          "quote": "Evidencia ficticia de demostración para el control r1-04.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r1-05",
+      "section": 1,
+      "page": 2,
+      "label": "Fecha de ingreso",
+      "criterion": "Registrar cuándo se recibió el requerimiento.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 2,
+        "section": 1
+      },
+      "state": "available",
+      "value": "Dato mock validado para r1-05.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r1-05",
+          "documentId": "doc_demo_comercial",
+          "fileName": "Bases comerciales DEMO.pdf",
+          "path": "01_Comercial/Bases_comerciales_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r1-05",
+          "quote": "Evidencia ficticia de demostración para el control r1-05.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r1-06",
+      "section": 1,
+      "page": 2,
+      "label": "Fecha de cierre",
+      "criterion": "Confirmar la fecha y hora límite del portal o del envío.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 2,
+        "section": 1
+      },
+      "state": "available",
+      "value": "Dato mock validado para r1-06.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r1-06",
+          "documentId": "doc_demo_comercial",
+          "fileName": "Bases comerciales DEMO.pdf",
+          "path": "01_Comercial/Bases_comerciales_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r1-06",
+          "quote": "Evidencia ficticia de demostración para el control r1-06.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r1-07",
+      "section": 1,
+      "page": 2,
+      "label": "Entrega requerida",
+      "criterion": "Registrar la fecha solicitada por el cliente y contrastarla con el plazo real del fabricante.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 2,
+        "section": 1
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r1-08",
+      "section": 1,
+      "page": 2,
+      "label": "Tipo de propuesta",
+      "criterion": "Definir expresamente si es firme o referencial.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 2,
+        "section": 1
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r1-09",
+      "section": 1,
+      "page": 2,
+      "label": "Competencia",
+      "criterion": "Identificar marcas y tecnologías contra las cuales se compite.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 2,
+        "section": 1
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r1-10",
+      "section": 1,
+      "page": 2,
+      "label": "Target o presupuesto",
+      "criterion": "Registrar el objetivo económico cuando esté disponible.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 2,
+        "section": 1
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r1-11",
+      "section": 1,
+      "page": 3,
+      "label": "Driver del negocio",
+      "criterion": "Indicar si el criterio principal es precio, plazo, tecnología, continuidad de base instalada o especificación de marca.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 3,
+        "section": 1
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r1-12",
+      "section": 1,
+      "page": 3,
+      "label": "Probabilidad y fecha de compra",
+      "criterion": "Registrar compromiso o expectativa de adjudicación y su fecha estimada.",
+      "pillar": 1,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 3,
+        "section": 1
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r2-01",
+      "section": 2,
+      "page": 3,
+      "label": "Diagrama unilineal",
+      "criterion": "Debe mostrar acometidas, barras, alimentadores, cargas y arquitectura general.",
+      "pillar": 2,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 3,
+        "section": 2
+      },
+      "state": "available",
+      "value": "Dato mock validado para r2-01.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r2-01",
+          "documentId": "doc_demo_entrada",
+          "fileName": "Listado de antecedentes DEMO.xlsx",
+          "path": "02_Entrada/Listado_antecedentes_DEMO.xlsx",
+          "revision": "B",
+          "locator": "Sección DEMO · control r2-01",
+          "quote": "Evidencia ficticia de demostración para el control r2-01.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r2-02",
+      "section": 2,
+      "page": 3,
+      "label": "Listado de cargas o TAG",
+      "criterion": "Debe identificar cantidad, potencia o corriente y tipo de unidad requerida.",
+      "pillar": 2,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 3,
+        "section": 2
+      },
+      "state": "available",
+      "value": "Dato mock validado para r2-02.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r2-02",
+          "documentId": "doc_demo_entrada",
+          "fileName": "Listado de antecedentes DEMO.xlsx",
+          "path": "02_Entrada/Listado_antecedentes_DEMO.xlsx",
+          "revision": "B",
+          "locator": "Sección DEMO · control r2-02",
+          "quote": "Evidencia ficticia de demostración para el control r2-02.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r2-03",
+      "section": 2,
+      "page": 3,
+      "label": "Especificaciones técnicas",
+      "criterion": "Revisar normas, construcción, pruebas, materiales y desviaciones permitidas.",
+      "pillar": 2,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 3,
+        "section": 2
+      },
+      "state": "available",
+      "value": "Dato mock validado para r2-03.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r2-03",
+          "documentId": "doc_demo_entrada",
+          "fileName": "Listado de antecedentes DEMO.xlsx",
+          "path": "02_Entrada/Listado_antecedentes_DEMO.xlsx",
+          "revision": "B",
+          "locator": "Sección DEMO · control r2-03",
+          "quote": "Evidencia ficticia de demostración para el control r2-03.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r2-04",
+      "section": 2,
+      "page": 3,
+      "label": "Hoja de datos",
+      "criterion": "Completar y contrastar cada dato con el reporte técnico o la propuesta.",
+      "pillar": 2,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 3,
+        "section": 2
+      },
+      "state": "available",
+      "value": "Dato mock validado para r2-04.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r2-04",
+          "documentId": "doc_demo_entrada",
+          "fileName": "Listado de antecedentes DEMO.xlsx",
+          "path": "02_Entrada/Listado_antecedentes_DEMO.xlsx",
+          "revision": "B",
+          "locator": "Sección DEMO · control r2-04",
+          "quote": "Evidencia ficticia de demostración para el control r2-04.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r2-05",
+      "section": 2,
+      "page": 3,
+      "label": "Layout o elevación",
+      "criterion": "Revisar restricciones dimensionales, acceso y disposición solicitada.",
+      "pillar": 2,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 3,
+        "section": 2
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r2-06",
+      "section": 2,
+      "page": 3,
+      "label": "Arquitectura de control",
+      "criterion": "Revisar PLC, DCS, redes, señales cableadas y protocolos.",
+      "pillar": 2,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 3,
+        "section": 2
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r2-07",
+      "section": 2,
+      "page": 3,
+      "label": "Formato de oferta",
+      "criterion": "Confirmar formatos obligatorios, planillas, cuadros de precios y portal de carga.",
+      "pillar": 2,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 3,
+        "section": 2
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r2-08",
+      "section": 2,
+      "page": 3,
+      "label": "Lista de entregables",
+      "criterion": "Identificar planos, manuales, hojas de datos, certificados y dossiers requeridos.",
+      "pillar": 2,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 3,
+        "section": 2
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-01",
+      "section": 3,
+      "page": 4,
+      "label": "Tensión nominal",
+      "criterion": "Tensión de potencia del CCM y de las cargas.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 4,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-01.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-01",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-01",
+          "quote": "Evidencia ficticia de demostración para el control r3-01.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-02",
+      "section": 3,
+      "page": 4,
+      "label": "Frecuencia",
+      "criterion": "Confirmar 50 o 60 Hz.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 4,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-02.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-02",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-02",
+          "quote": "Evidencia ficticia de demostración para el control r3-02.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-03",
+      "section": 3,
+      "page": 4,
+      "label": "Fases y neutro",
+      "criterion": "Confirmar sistema trifásico y necesidad de neutro.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 4,
+        "section": 3
+      },
+      "state": "not_applicable",
+      "value": "",
+      "notes": "No aplica al alcance ficticio de esta fase del proyecto.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-04",
+      "section": 3,
+      "page": 4,
+      "label": "Cortocircuito",
+      "criterion": "Corriente de cortocircuito requerida en el punto de instalación y duración cuando corresponda.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 4,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-04.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-04",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-04",
+          "quote": "Evidencia ficticia de demostración para el control r3-04.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-05",
+      "section": 3,
+      "page": 4,
+      "label": "Tensión de control",
+      "criterion": "Definir tensión y fuente de control interna o externa.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 4,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-05.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-05",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-05",
+          "quote": "Evidencia ficticia de demostración para el control r3-05.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-06",
+      "section": 3,
+      "page": 4,
+      "label": "Fuente del sistema",
+      "criterion": "Cuando afecte el dimensionamiento, registrar transformador, potencia e impedancia disponibles.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 4,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-06.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-06",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-06",
+          "quote": "Evidencia ficticia de demostración para el control r3-06.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-07",
+      "section": 3,
+      "page": 4,
+      "label": "Corriente de barra principal",
+      "criterion": "Debe cubrir la demanda y la arquitectura definida por el unilineal.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 4,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-07.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-07",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-07",
+          "quote": "Evidencia ficticia de demostración para el control r3-07.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-08",
+      "section": 3,
+      "page": 4,
+      "label": "Barras verticales",
+      "criterion": "Revisar capacidad estándar del fabricante y requerimientos del cliente.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 4,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-08.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-08",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-08",
+          "quote": "Evidencia ficticia de demostración para el control r3-08.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-09",
+      "section": 3,
+      "page": 5,
+      "label": "Número de conductores",
+      "criterion": "Confirmar tres conductores o sistema con neutro.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 5,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-09.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-09",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-09",
+          "quote": "Evidencia ficticia de demostración para el control r3-09.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-10",
+      "section": 3,
+      "page": 5,
+      "label": "Configuración de acometida",
+      "criterion": "Incoming simple, doble incoming o Main Tie Main con bus coupler.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 5,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-10.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-10",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-10",
+          "quote": "Evidencia ficticia de demostración para el control r3-10.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-11",
+      "section": 3,
+      "page": 5,
+      "label": "Operación del acoplador",
+      "criterion": "Manual o automática, con ATS o lógica de transferencia cuando aplique.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 5,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-11.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-11",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-11",
+          "quote": "Evidencia ficticia de demostración para el control r3-11.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-12",
+      "section": 3,
+      "page": 5,
+      "label": "Paralelismo",
+      "criterion": "Confirmar si se permite paralelismo momentáneo de fuentes.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 5,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-12.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-12",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-12",
+          "quote": "Evidencia ficticia de demostración para el control r3-12.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-13",
+      "section": 3,
+      "page": 5,
+      "label": "Reserva futura",
+      "criterion": "Registrar porcentaje de espacio futuro, puertas, cubículos o unidades equipadas.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 5,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-13.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-13",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-13",
+          "quote": "Evidencia ficticia de demostración para el control r3-13.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-14",
+      "section": 3,
+      "page": 5,
+      "label": "Entrada y salida de cables",
+      "criterion": "Superior o inferior, de acuerdo con layout y disposición de planta.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 5,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-14.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-14",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-14",
+          "quote": "Evidencia ficticia de demostración para el control r3-14.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-15",
+      "section": 3,
+      "page": 5,
+      "label": "Dentro o fuera de sala",
+      "criterion": "Dato básico para definir la solución de construcción.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 5,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-15.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-15",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-15",
+          "quote": "Evidencia ficticia de demostración para el control r3-15.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-16",
+      "section": 3,
+      "page": 5,
+      "label": "Altitud",
+      "criterion": "Registrar metros sobre el nivel del mar; puede afectar barras, interruptores, VDF y ventilación.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 5,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-16.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-16",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-16",
+          "quote": "Evidencia ficticia de demostración para el control r3-16.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-17",
+      "section": 3,
+      "page": 5,
+      "label": "Temperatura ambiente",
+      "criterion": "Registrar mínimos y máximos de diseño.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 5,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-17.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-17",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-17",
+          "quote": "Evidencia ficticia de demostración para el control r3-17.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-18",
+      "section": 3,
+      "page": 5,
+      "label": "Ambiente",
+      "criterion": "Identificar polvo, humedad, ambiente salino, gases corrosivos o vibración.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 5,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-18.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-18",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-18",
+          "quote": "Evidencia ficticia de demostración para el control r3-18.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-19",
+      "section": 3,
+      "page": 6,
+      "label": "Acceso",
+      "criterion": "Confirmar acceso frontal o necesidad de acceso posterior.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 6,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-19.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-19",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-19",
+          "quote": "Evidencia ficticia de demostración para el control r3-19.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r3-20",
+      "section": 3,
+      "page": 6,
+      "label": "Restricciones",
+      "criterion": "Registrar dimensiones máximas, rutas de ingreso, izaje y separación disponible.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 6,
+        "section": 3
+      },
+      "state": "available",
+      "value": "Dato mock validado para r3-20.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r3-20",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r3-20",
+          "quote": "Evidencia ficticia de demostración para el control r3-20.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-01",
+      "section": 4,
+      "page": 6,
+      "label": "Construcción NEMA",
+      "criterion": "Confirmar que la especificación y la aplicación permiten CENTERLINE 2100.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 6,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-01.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-01",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-01",
+          "quote": "Evidencia ficticia de demostración para el control r4-01.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-02",
+      "section": 4,
+      "page": 6,
+      "label": "Instalación",
+      "criterion": "Dentro o fuera de sala; no solicitar al cliente un grado NEMA como dato básico.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 6,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-02.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-02",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-02",
+          "quote": "Evidencia ficticia de demostración para el control r4-02.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-03",
+      "section": 4,
+      "page": 6,
+      "label": "ANSI 49",
+      "criterion": "Considerar como pintura estándar e informarla en la propuesta.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 6,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-03.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-03",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-03",
+          "quote": "Evidencia ficticia de demostración para el control r4-03.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-04",
+      "section": 4,
+      "page": 6,
+      "label": "ArcShield",
+      "criterion": "Confirmar si se requiere resistencia al arco y bajo qué condición de acceso u operación.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 6,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-04.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-04",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-04",
+          "quote": "Evidencia ficticia de demostración para el control r4-04.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-05",
+      "section": 4,
+      "page": 6,
+      "label": "Configuración del incoming",
+      "criterion": "Verificar que la alternativa seleccionada mantenga la certificación declarada. Un Incoming Lug puede afectar la condición ArcShield.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 6,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-05.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-05",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-05",
+          "quote": "Evidencia ficticia de demostración para el control r4-05.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-06",
+      "section": 4,
+      "page": 6,
+      "label": "Unidades",
+      "criterion": "Confirmar unidades fijas, removibles o plug in según el alcance.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 6,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-06.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-06",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-06",
+          "quote": "Evidencia ficticia de demostración para el control r4-06.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-07",
+      "section": 4,
+      "page": 7,
+      "label": "Space Factor",
+      "criterion": "Definir el espacio requerido por cada gaveta y la disponibilidad en el lineup.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 7,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-07.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-07",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-07",
+          "quote": "Evidencia ficticia de demostración para el control r4-07.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-08",
+      "section": 4,
+      "page": 7,
+      "label": "Shutters",
+      "criterion": "Confirmar requerimiento de shutters automáticos cuando aplique.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 7,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-08.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-08",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-08",
+          "quote": "Evidencia ficticia de demostración para el control r4-08.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-09",
+      "section": 4,
+      "page": 7,
+      "label": "Controlador de motor",
+      "criterion": "Definir relé térmico, electrónico o inteligente y protocolo de comunicación.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 7,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-09.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-09",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-09",
+          "quote": "Evidencia ficticia de demostración para el control r4-09.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-10",
+      "section": 4,
+      "page": 7,
+      "label": "Medición",
+      "criterion": "Definir medidores, variables y accesorios solicitados.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 7,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-10.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-10",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-10",
+          "quote": "Evidencia ficticia de demostración para el control r4-10.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-11",
+      "section": 4,
+      "page": 7,
+      "label": "Protecciones especiales",
+      "criterion": "Falla a tierra, 50G, diferencial u otras funciones requeridas.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 7,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-11.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-11",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-11",
+          "quote": "Evidencia ficticia de demostración para el control r4-11.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-12",
+      "section": 4,
+      "page": 7,
+      "label": "Comunicaciones",
+      "criterion": "Confirmar protocolo y arquitectura de red compatible con la solución.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 7,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-12.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-12",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-12",
+          "quote": "Evidencia ficticia de demostración para el control r4-12.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r4-13",
+      "section": 4,
+      "page": 7,
+      "label": "Reserva",
+      "criterion": "Registrar cubículos futuros, espacios libres o unidades preparadas.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 7,
+        "section": 4
+      },
+      "state": "available",
+      "value": "Dato mock validado para r4-13.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r4-13",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r4-13",
+          "quote": "Evidencia ficticia de demostración para el control r4-13.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-01",
+      "section": 5,
+      "page": 8,
+      "label": "Construcción IEC",
+      "criterion": "Confirmar que la especificación exige o permite FLEXLINE 3500.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 8,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-01.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-01",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-01",
+          "quote": "Evidencia ficticia de demostración para el control r5-01.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-02",
+      "section": 5,
+      "page": 8,
+      "label": "Instalación",
+      "criterion": "Confirmar dentro o fuera de sala y las condiciones ambientales.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 8,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-02.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-02",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-02",
+          "quote": "Evidencia ficticia de demostración para el control r5-02.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-03",
+      "section": 5,
+      "page": 8,
+      "label": "Segregación",
+      "criterion": "Revisar la forma requerida en la especificación, por ejemplo Form 4B cuando corresponda.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 8,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-03.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-03",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-03",
+          "quote": "Evidencia ficticia de demostración para el control r5-03.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-04",
+      "section": 5,
+      "page": 8,
+      "label": "Tipo de unidades",
+      "criterion": "Fijas, removibles o withdrawable según el requerimiento.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 8,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-04.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-04",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-04",
+          "quote": "Evidencia ficticia de demostración para el control r5-04.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-05",
+      "section": 5,
+      "page": 8,
+      "label": "Acometidas",
+      "criterion": "Definir incoming simple, doble incoming y bus coupler.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 8,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-05.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-05",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-05",
+          "quote": "Evidencia ficticia de demostración para el control r5-05.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-06",
+      "section": 5,
+      "page": 8,
+      "label": "Main Tie Main",
+      "criterion": "Confirmar operación, enclavamientos, ATS y tipo de interruptores.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 8,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-06.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-06",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-06",
+          "quote": "Evidencia ficticia de demostración para el control r5-06.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-07",
+      "section": 5,
+      "page": 8,
+      "label": "Barras",
+      "criterion": "Definir corriente, número de conductores y secciones de barra.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 8,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-07.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-07",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-07",
+          "quote": "Evidencia ficticia de demostración para el control r5-07.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-08",
+      "section": 5,
+      "page": 9,
+      "label": "Cableado",
+      "criterion": "Ingreso y salida superior o inferior y espacio de cables.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 9,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-08.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-08",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-08",
+          "quote": "Evidencia ficticia de demostración para el control r5-08.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-09",
+      "section": 5,
+      "page": 9,
+      "label": "Control de motores",
+      "criterion": "Definir FVNR, FVR, protecciones, UMC u otro controlador.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 9,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-09.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-09",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-09",
+          "quote": "Evidencia ficticia de demostración para el control r5-09.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-10",
+      "section": 5,
+      "page": 9,
+      "label": "Comunicaciones",
+      "criterion": "Confirmar protocolo, red e integración con PLC o DCS.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 9,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-10.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-10",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-10",
+          "quote": "Evidencia ficticia de demostración para el control r5-10.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-11",
+      "section": 5,
+      "page": 9,
+      "label": "Acceso",
+      "criterion": "Confirmar requerimientos frontales, posteriores y mantenimiento.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 9,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-11.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-11",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-11",
+          "quote": "Evidencia ficticia de demostración para el control r5-11.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r5-12",
+      "section": 5,
+      "page": 9,
+      "label": "Jefe de proyecto",
+      "criterion": "Considerar desde el inicio cuando la solución requiera coordinación de ingeniería e integración.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 9,
+        "section": 5
+      },
+      "state": "available",
+      "value": "Dato mock validado para r5-12.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r5-12",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r5-12",
+          "quote": "Evidencia ficticia de demostración para el control r5-12.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-01",
+      "section": 6,
+      "page": 10,
+      "label": "TAG",
+      "criterion": "Identificación única de la carga o alimentador.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 10,
+        "section": 6
+      },
+      "state": "available",
+      "value": "Dato mock validado para r6-01.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r6-01",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r6-01",
+          "quote": "Evidencia ficticia de demostración para el control r6-01.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-02",
+      "section": 6,
+      "page": 10,
+      "label": "Cantidad",
+      "criterion": "Número total de unidades iguales.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 10,
+        "section": 6
+      },
+      "state": "available",
+      "value": "Dato mock validado para r6-02.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r6-02",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r6-02",
+          "quote": "Evidencia ficticia de demostración para el control r6-02.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-03",
+      "section": 6,
+      "page": 10,
+      "label": "Tipo de carga",
+      "criterion": "Motor, alimentador, calefactor, transformador u otra carga.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 10,
+        "section": 6
+      },
+      "state": "available",
+      "value": "Dato mock validado para r6-03.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r6-03",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r6-03",
+          "quote": "Evidencia ficticia de demostración para el control r6-03.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-04",
+      "section": 6,
+      "page": 10,
+      "label": "Tipo de unidad",
+      "criterion": "FVNR, FVR, feeder, soft starter, VDF u otra.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 10,
+        "section": 6
+      },
+      "state": "available",
+      "value": "Dato mock validado para r6-04.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r6-04",
+          "documentId": "doc_demo_unilineal",
+          "fileName": "Diagrama unilineal DEMO Rev. B.pdf",
+          "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r6-04",
+          "quote": "Evidencia ficticia de demostración para el control r6-04.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-05",
+      "section": 6,
+      "page": 10,
+      "label": "Potencia",
+      "criterion": "HP o kW del motor o carga.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 10,
+        "section": 6
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-06",
+      "section": 6,
+      "page": 10,
+      "label": "Corriente",
+      "criterion": "Corriente nominal disponible o calculada.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 10,
+        "section": 6
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r6-07",
+      "section": 6,
+      "page": 10,
+      "label": "Protección",
+      "criterion": "Breaker, fusibles, relé y capacidad interruptiva.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 10,
+        "section": 6
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-08",
+      "section": 6,
+      "page": 10,
+      "label": "Controlador",
+      "criterion": "E300, UMC100.3 u otra alternativa requerida.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 10,
+        "section": 6
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-09",
+      "section": 6,
+      "page": 10,
+      "label": "Comunicación",
+      "criterion": "EtherNet IP, Profibus DP, Modbus TCP u otro protocolo definido.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 10,
+        "section": 6
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r6-10",
+      "section": 6,
+      "page": 10,
+      "label": "Señales",
+      "criterion": "Marcha, falla, local remoto, abierto cerrado, analógicas y contactos auxiliares.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 10,
+        "section": 6
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-11",
+      "section": 6,
+      "page": 11,
+      "label": "Accesorios",
+      "criterion": "Botoneras, selectores, luces piloto, borneras, bobinas y accionamientos.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 11,
+        "section": 6
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-12",
+      "section": 6,
+      "page": 11,
+      "label": "Protección especial",
+      "criterion": "50G, falla a tierra, monitoreo diferencial u otras funciones.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 11,
+        "section": 6
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r6-13",
+      "section": 6,
+      "page": 11,
+      "label": "Ubicación física",
+      "criterion": "Columna, gaveta, Space Factor o posición requerida.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 11,
+        "section": 6
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r6-14",
+      "section": 6,
+      "page": 11,
+      "label": "Reserva",
+      "criterion": "Espacio futuro, gaveta equipada o solo puerta y cubículo.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 11,
+        "section": 6
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r7-01",
+      "section": 7,
+      "page": 12,
+      "label": "Fabricante y modelo",
+      "criterion": "Identificar exactamente el CCM existente.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 12,
+        "section": 7
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r7-02",
+      "section": 7,
+      "page": 12,
+      "label": "Número de serie y orden",
+      "criterion": "Solicitar placa, serie y orden de fabricación cuando exista.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 12,
+        "section": 7
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r7-03",
+      "section": 7,
+      "page": 12,
+      "label": "Fotografías",
+      "criterion": "Vistas generales, interiores, barras, gavetas y espacio disponible.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 12,
+        "section": 7
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r7-04",
+      "section": 7,
+      "page": 12,
+      "label": "Planos originales",
+      "criterion": "Unilineal, elevación frontal, layout y diagramas de control.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 12,
+        "section": 7
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r7-05",
+      "section": 7,
+      "page": 12,
+      "label": "Disponibilidad física",
+      "criterion": "Confirmar espacios libres para columnas o gavetas.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 12,
+        "section": 7
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r7-06",
+      "section": 7,
+      "page": 12,
+      "label": "Compatibilidad de barras",
+      "criterion": "Corriente, cortocircuito, posición y unión con el lineup existente.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 12,
+        "section": 7
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r7-07",
+      "section": 7,
+      "page": 12,
+      "label": "Stabs y gavetas",
+      "criterion": "Verificar Space Factor, conexión y compatibilidad mecánica y eléctrica.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 12,
+        "section": 7
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r7-08",
+      "section": 7,
+      "page": 13,
+      "label": "Conductores",
+      "criterion": "Revisar longitud disponible de fuerza, control y comunicación.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 13,
+        "section": 7
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r7-09",
+      "section": 7,
+      "page": 13,
+      "label": "Red existente",
+      "criterion": "Confirmar protocolo, nodos disponibles y arquitectura instalada.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 13,
+        "section": 7
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r7-10",
+      "section": 7,
+      "page": 13,
+      "label": "Trabajo en terreno",
+      "criterion": "Definir corte, perforación, modificaciones, pruebas y responsabilidad de montaje.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 13,
+        "section": 7
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r8-01",
+      "section": 8,
+      "page": 14,
+      "label": "Potencia",
+      "criterion": "HP o kW nominales.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 14,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-02",
+      "section": 8,
+      "page": 14,
+      "label": "Tensión",
+      "criterion": "Tensión nominal del motor.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 14,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-03",
+      "section": 8,
+      "page": 14,
+      "label": "Corriente de placa",
+      "criterion": "Dato crítico para seleccionar el frame.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 14,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-04",
+      "section": 8,
+      "page": 14,
+      "label": "Frecuencia",
+      "criterion": "Frecuencia nominal.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 14,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-05",
+      "section": 8,
+      "page": 14,
+      "label": "Velocidad",
+      "criterion": "RPM nominales y rango de velocidad requerido.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 14,
+        "section": 8
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-06",
+      "section": 8,
+      "page": 14,
+      "label": "Tipo de motor",
+      "criterion": "Inducción, imán permanente u otro.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 14,
+        "section": 8
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r8-07",
+      "section": 8,
+      "page": 14,
+      "label": "Placa del motor",
+      "criterion": "Solicitar fotografía o ficha técnica completa.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 14,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-08",
+      "section": 8,
+      "page": 14,
+      "label": "Aptitud para VDF",
+      "criterion": "Confirmar condición inverter duty, aislamiento y restricciones del motor.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 14,
+        "section": 8
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-09",
+      "section": 8,
+      "page": 15,
+      "label": "Aplicación",
+      "criterion": "Bomba, ventilador, correa, compresor, molino, grúa, mezclador u otra.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 15,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-10",
+      "section": 8,
+      "page": 15,
+      "label": "Tipo de torque",
+      "criterion": "Variable o constante.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 15,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-11",
+      "section": 8,
+      "page": 15,
+      "label": "Régimen",
+      "criterion": "Normal Duty o Heavy Duty según carga y sobrecarga.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 15,
+        "section": 8
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-12",
+      "section": 8,
+      "page": 15,
+      "label": "Sobrecarga",
+      "criterion": "Corriente y tiempo de sobrecarga requeridos.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 15,
+        "section": 8
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r8-13",
+      "section": 8,
+      "page": 15,
+      "label": "Aceleración",
+      "criterion": "Tiempos de aceleración y desaceleración.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 15,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-14",
+      "section": 8,
+      "page": 15,
+      "label": "Partidas",
+      "criterion": "Número de partidas por hora y operación continua o intermitente.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 15,
+        "section": 8
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-15",
+      "section": 8,
+      "page": 15,
+      "label": "Frenado",
+      "criterion": "Frenado resistivo, carga regenerativa o AFE cuando corresponda.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 15,
+        "section": 8
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r8-16",
+      "section": 8,
+      "page": 15,
+      "label": "Bypass",
+      "criterion": "Confirmar necesidad de bypass, transferencia o maestro seguidor.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 15,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-17",
+      "section": 8,
+      "page": 16,
+      "label": "Alimentación",
+      "criterion": "Tensión, frecuencia y número de fases.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 16,
+        "section": 8
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-18",
+      "section": 8,
+      "page": 16,
+      "label": "Cortocircuito",
+      "criterion": "Corriente disponible en el punto de conexión.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 16,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-19",
+      "section": 8,
+      "page": 16,
+      "label": "Transformador",
+      "criterion": "Potencia e impedancia cuando afecten selección o armónicos.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 16,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-20",
+      "section": 8,
+      "page": 16,
+      "label": "Altitud",
+      "criterion": "Metros sobre el nivel del mar.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 16,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-21",
+      "section": 8,
+      "page": 16,
+      "label": "Temperatura",
+      "criterion": "Temperatura ambiente mínima y máxima.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 16,
+        "section": 8
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r8-22",
+      "section": 8,
+      "page": 16,
+      "label": "Interior o exterior",
+      "criterion": "Condición de instalación y ambiente.",
+      "pillar": 3,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 16,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-23",
+      "section": 8,
+      "page": 16,
+      "label": "Forma de suministro",
+      "criterion": "VDF abierto, Drive in a Box, Package Drive, gabinete independiente o integración en CCM.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 16,
+        "section": 8
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-24",
+      "section": 8,
+      "page": 16,
+      "label": "Distancia al motor",
+      "criterion": "Longitud aproximada del cable VDF motor.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 16,
+        "section": 8
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r8-25",
+      "section": 8,
+      "page": 16,
+      "label": "Filtro de salida",
+      "criterion": "Evaluar reactor, DV DT o filtro sinusoidal según distancia y motor.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 16,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-26",
+      "section": 8,
+      "page": 17,
+      "label": "Armónicos",
+      "criterion": "Confirmar límites, IEEE 519, filtros, solución Low Harmonic o AFE.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 17,
+        "section": 8
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r8-27",
+      "section": 8,
+      "page": 17,
+      "label": "Comunicación",
+      "criterion": "Protocolo, señales, HMI, STO, encoder y realimentación.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 17,
+        "section": 8
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r8-28",
+      "section": 8,
+      "page": 17,
+      "label": "Ventilación",
+      "criterion": "Definir refrigeración, redundancia y condiciones del gabinete.",
+      "pillar": 3,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 17,
+        "section": 8
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-01",
+      "section": 9,
+      "page": 18,
+      "label": "Ingeniería",
+      "criterion": "Definir si se incluye ingeniería de detalle, revisión de documentos y planos para aprobación.",
+      "pillar": 4,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 18,
+        "section": 9
+      },
+      "state": "available",
+      "value": "Dato mock validado para r9-01.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r9-01",
+          "documentId": "doc_demo_centerline",
+          "fileName": "Especificación CENTERLINE DEMO.pdf",
+          "path": "04_CCM/Especificacion_CENTERLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r9-01",
+          "quote": "Evidencia ficticia de demostración para el control r9-01.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-02",
+      "section": 9,
+      "page": 18,
+      "label": "Integración",
+      "criterion": "Definir modificaciones, cableado, programación y pruebas internas.",
+      "pillar": 4,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 18,
+        "section": 9
+      },
+      "state": "available",
+      "value": "Dato mock validado para r9-02.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r9-02",
+          "documentId": "doc_demo_centerline",
+          "fileName": "Especificación CENTERLINE DEMO.pdf",
+          "path": "04_CCM/Especificacion_CENTERLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r9-02",
+          "quote": "Evidencia ficticia de demostración para el control r9-02.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-03",
+      "section": 9,
+      "page": 18,
+      "label": "Planos",
+      "criterion": "Elevación frontal, unilineal, esquemas de control, listas de materiales y conexiones.",
+      "pillar": 4,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 18,
+        "section": 9
+      },
+      "state": "available",
+      "value": "Dato mock validado para r9-03.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r9-03",
+          "documentId": "doc_demo_centerline",
+          "fileName": "Especificación CENTERLINE DEMO.pdf",
+          "path": "04_CCM/Especificacion_CENTERLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r9-03",
+          "quote": "Evidencia ficticia de demostración para el control r9-03.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-04",
+      "section": 9,
+      "page": 18,
+      "label": "Hojas de datos",
+      "criterion": "Confirmar formato y responsable de completar comentarios.",
+      "pillar": 4,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 18,
+        "section": 9
+      },
+      "state": "available",
+      "value": "Dato mock validado para r9-04.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r9-04",
+          "documentId": "doc_demo_centerline",
+          "fileName": "Especificación CENTERLINE DEMO.pdf",
+          "path": "04_CCM/Especificacion_CENTERLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r9-04",
+          "quote": "Evidencia ficticia de demostración para el control r9-04.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-05",
+      "section": 9,
+      "page": 18,
+      "label": "FAT",
+      "criterion": "Alcance de pruebas, testigos, protocolos y aviso previo requerido.",
+      "pillar": 4,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 18,
+        "section": 9
+      },
+      "state": "available",
+      "value": "Dato mock validado para r9-05.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r9-05",
+          "documentId": "doc_demo_centerline",
+          "fileName": "Especificación CENTERLINE DEMO.pdf",
+          "path": "04_CCM/Especificacion_CENTERLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r9-05",
+          "quote": "Evidencia ficticia de demostración para el control r9-05.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-06",
+      "section": 9,
+      "page": 18,
+      "label": "Inspecciones",
+      "criterion": "Registrar hitos y días de aviso exigidos.",
+      "pillar": 4,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 18,
+        "section": 9
+      },
+      "state": "available",
+      "value": "Dato mock validado para r9-06.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r9-06",
+          "documentId": "doc_demo_centerline",
+          "fileName": "Especificación CENTERLINE DEMO.pdf",
+          "path": "04_CCM/Especificacion_CENTERLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r9-06",
+          "quote": "Evidencia ficticia de demostración para el control r9-06.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-07",
+      "section": 9,
+      "page": 18,
+      "label": "Transporte",
+      "criterion": "Condición de entrega, embalaje, exportación y despacho parcial.",
+      "pillar": 4,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 18,
+        "section": 9
+      },
+      "state": "available",
+      "value": "Dato mock validado para r9-07.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r9-07",
+          "documentId": "doc_demo_centerline",
+          "fileName": "Especificación CENTERLINE DEMO.pdf",
+          "path": "04_CCM/Especificacion_CENTERLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r9-07",
+          "quote": "Evidencia ficticia de demostración para el control r9-07.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-08",
+      "section": 9,
+      "page": 19,
+      "label": "Montaje",
+      "criterion": "Definir si se incluye asistencia o montaje completo.",
+      "pillar": 4,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 19,
+        "section": 9
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-09",
+      "section": 9,
+      "page": 19,
+      "label": "Comisionamiento",
+      "criterion": "Definir alcance, cantidad de días, jornadas y exclusiones.",
+      "pillar": 4,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 19,
+        "section": 9
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-10",
+      "section": 9,
+      "page": 19,
+      "label": "Puesta en marcha",
+      "criterion": "Definir responsabilidades, recursos del cliente y condiciones previas.",
+      "pillar": 4,
+      "critical": true,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 19,
+        "section": 9
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-11",
+      "section": 9,
+      "page": 19,
+      "label": "Capacitación",
+      "criterion": "Cantidad de personas, duración, lugar y contenido.",
+      "pillar": 4,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 19,
+        "section": 9
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-12",
+      "section": 9,
+      "page": 19,
+      "label": "Repuestos",
+      "criterion": "Repuestos para puesta en marcha, críticos y para uno o dos años.",
+      "pillar": 4,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 19,
+        "section": 9
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r9-13",
+      "section": 9,
+      "page": 19,
+      "label": "Garantía",
+      "criterion": "Confirmar duración, inicio y condiciones.",
+      "pillar": 4,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 19,
+        "section": 9
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r9-14",
+      "section": 9,
+      "page": 19,
+      "label": "Documentación final",
+      "criterion": "Manuales, certificados, dossier y formato de entrega.",
+      "pillar": 4,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 19,
+        "section": 9
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-01",
+      "section": 10,
+      "page": 20,
+      "label": "Configuración",
+      "criterion": "Coincide con el unilineal, la lista de cargas y la hoja de datos.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 20,
+        "section": 10
+      },
+      "state": "available",
+      "value": "Dato mock validado para r10-01.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r10-01",
+          "documentId": "doc_demo_flexline",
+          "fileName": "Especificación FLEXLINE DEMO.pdf",
+          "path": "05_VDF/Especificacion_FLEXLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r10-01",
+          "quote": "Evidencia ficticia de demostración para el control r10-01.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-02",
+      "section": 10,
+      "page": 20,
+      "label": "Cantidades",
+      "criterion": "Se verificaron columnas, gavetas, unidades, accesorios y repuestos.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 20,
+        "section": 10
+      },
+      "state": "available",
+      "value": "Dato mock validado para r10-02.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r10-02",
+          "documentId": "doc_demo_flexline",
+          "fileName": "Especificación FLEXLINE DEMO.pdf",
+          "path": "05_VDF/Especificacion_FLEXLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r10-02",
+          "quote": "Evidencia ficticia de demostración para el control r10-02.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-03",
+      "section": 10,
+      "page": 20,
+      "label": "Desviaciones",
+      "criterion": "Se declararon todas las diferencias respecto de la especificación.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 20,
+        "section": 10
+      },
+      "state": "available",
+      "value": "Dato mock validado para r10-03.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r10-03",
+          "documentId": "doc_demo_flexline",
+          "fileName": "Especificación FLEXLINE DEMO.pdf",
+          "path": "05_VDF/Especificacion_FLEXLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r10-03",
+          "quote": "Evidencia ficticia de demostración para el control r10-03.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-04",
+      "section": 10,
+      "page": 20,
+      "label": "Supuestos",
+      "criterion": "Se identificaron los datos asumidos y su impacto.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 20,
+        "section": 10
+      },
+      "state": "available",
+      "value": "Dato mock validado para r10-04.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r10-04",
+          "documentId": "doc_demo_flexline",
+          "fileName": "Especificación FLEXLINE DEMO.pdf",
+          "path": "05_VDF/Especificacion_FLEXLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r10-04",
+          "quote": "Evidencia ficticia de demostración para el control r10-04.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-05",
+      "section": 10,
+      "page": 20,
+      "label": "Precio",
+      "criterion": "Incluye equipos, materiales, integración, servicios, transporte y contingencias aplicables.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 20,
+        "section": 10
+      },
+      "state": "available",
+      "value": "Dato mock validado para r10-05.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r10-05",
+          "documentId": "doc_demo_flexline",
+          "fileName": "Especificación FLEXLINE DEMO.pdf",
+          "path": "05_VDF/Especificacion_FLEXLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r10-05",
+          "quote": "Evidencia ficticia de demostración para el control r10-05.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-06",
+      "section": 10,
+      "page": 20,
+      "label": "Descuento y margen",
+      "criterion": "Se encuentran aprobados cuando corresponde.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 20,
+        "section": 10
+      },
+      "state": "available",
+      "value": "Dato mock validado para r10-06.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r10-06",
+          "documentId": "doc_demo_flexline",
+          "fileName": "Especificación FLEXLINE DEMO.pdf",
+          "path": "05_VDF/Especificacion_FLEXLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r10-06",
+          "quote": "Evidencia ficticia de demostración para el control r10-06.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-07",
+      "section": 10,
+      "page": 20,
+      "label": "Plazo",
+      "criterion": "Considera fabricación, procesamiento interno, transporte, calidad y entrega.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 20,
+        "section": 10
+      },
+      "state": "available",
+      "value": "Dato mock validado para r10-07.",
+      "notes": "Valor ficticio cargado para demostrar el avance del diagnóstico.",
+      "evidence": [
+        {
+          "id": "ev_demo_r10-07",
+          "documentId": "doc_demo_flexline",
+          "fileName": "Especificación FLEXLINE DEMO.pdf",
+          "path": "05_VDF/Especificacion_FLEXLINE_DEMO.pdf",
+          "revision": "B",
+          "locator": "Sección DEMO · control r10-07",
+          "quote": "Evidencia ficticia de demostración para el control r10-07.",
+          "url": ""
+        }
+      ],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-08",
+      "section": 10,
+      "page": 21,
+      "label": "Validez",
+      "criterion": "Se indicó vigencia técnica y comercial de la propuesta.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 21,
+        "section": 10
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r10-09",
+      "section": 10,
+      "page": 21,
+      "label": "Condición de pago",
+      "criterion": "Se revisó contra el requerimiento y los riesgos del negocio.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 21,
+        "section": 10
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-10",
+      "section": 10,
+      "page": 21,
+      "label": "Multas",
+      "criterion": "Se identificaron, limitaron o declararon como desviación.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 21,
+        "section": 10
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-11",
+      "section": 10,
+      "page": 21,
+      "label": "Exclusiones",
+      "criterion": "Se redactaron claramente y no contradicen el alcance ofertado.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 21,
+        "section": 10
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    },
+    {
+      "id": "r10-12",
+      "section": 10,
+      "page": 21,
+      "label": "Entregables",
+      "criterion": "Se verificó que todos los documentos comprometidos estén incluidos.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 21,
+        "section": 10
+      },
+      "state": "missing",
+      "value": "",
+      "notes": "Pendiente de confirmación del cliente (dato ficticio).",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-13",
+      "section": 10,
+      "page": 21,
+      "label": "Revisión interna",
+      "criterion": "Ingeniería, comercial y responsables técnicos revisaron los puntos críticos.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 21,
+        "section": 10
+      },
+      "state": "partial",
+      "value": "Antecedente mock incompleto.",
+      "notes": "Se requiere complementar la información ficticia.",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "source": "manual"
+    },
+    {
+      "id": "r10-14",
+      "section": 10,
+      "page": 21,
+      "label": "Formato de envío",
+      "criterion": "Se respetaron portal, planillas, moneda, idioma y estructura solicitada.",
+      "pillar": 5,
+      "critical": false,
+      "requirementSource": {
+        "file": "Requerimientos_minimos_CCM_VDF.pdf",
+        "page": 21,
+        "section": 10
+      },
+      "state": "unreviewed",
+      "value": "",
+      "notes": "",
+      "evidence": [],
+      "manualLock": false,
+      "updatedAt": null,
+      "updatedBy": "",
+      "source": "unreviewed"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_demo_comercial",
+      "name": "Bases comerciales DEMO.pdf",
+      "path": "01_Comercial/Bases_comerciales_DEMO.pdf",
+      "familyId": "bases-comerciales",
+      "revision": "B",
+      "url": "",
+      "notes": "Documento completamente ficticio utilizado solo para mostrar la interfaz.",
+      "mimeType": "application/pdf",
+      "readStatus": "read",
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    },
+    {
+      "id": "doc_demo_entrada",
+      "name": "Listado de antecedentes DEMO.xlsx",
+      "path": "02_Entrada/Listado_antecedentes_DEMO.xlsx",
+      "familyId": "antecedentes-entrada",
+      "revision": "B",
+      "url": "",
+      "notes": "Documento completamente ficticio utilizado solo para mostrar la interfaz.",
+      "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "readStatus": "read",
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    },
+    {
+      "id": "doc_demo_unilineal",
+      "name": "Diagrama unilineal DEMO Rev. B.pdf",
+      "path": "03_Ingenieria/Unilineal_DEMO_RevB.pdf",
+      "familyId": "unilineal",
+      "revision": "B",
+      "url": "",
+      "notes": "Documento completamente ficticio utilizado solo para mostrar la interfaz.",
+      "mimeType": "application/pdf",
+      "readStatus": "read",
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    },
+    {
+      "id": "doc_demo_centerline",
+      "name": "Especificación CENTERLINE DEMO.pdf",
+      "path": "04_CCM/Especificacion_CENTERLINE_DEMO.pdf",
+      "familyId": "centerline",
+      "revision": "B",
+      "url": "",
+      "notes": "Documento completamente ficticio utilizado solo para mostrar la interfaz.",
+      "mimeType": "application/pdf",
+      "readStatus": "read",
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    },
+    {
+      "id": "doc_demo_flexline",
+      "name": "Especificación FLEXLINE DEMO.pdf",
+      "path": "05_VDF/Especificacion_FLEXLINE_DEMO.pdf",
+      "familyId": "flexline",
+      "revision": "B",
+      "url": "",
+      "notes": "Documento completamente ficticio utilizado solo para mostrar la interfaz.",
+      "mimeType": "application/pdf",
+      "readStatus": "read",
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    }
+  ],
+  "revisions": [],
+  "queries": [
+    {
+      "id": "qry_demo_01",
+      "title": "Confirmar corriente de cortocircuito",
+      "question": "¿Se confirma el valor de cortocircuito disponible en la barra principal?",
+      "assignedTo": "Ingeniería Andina EPC (DEMO)",
+      "status": "open",
+      "resolution": "",
+      "closedAt": null,
+      "createdAt": "2026-09-22T15:00:00.000Z",
+      "createdBy": "Generador de datos mock",
+      "relatedChecklistIds": [
+        "r3-01"
+      ],
+      "evidence": [],
+      "messages": [],
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    },
+    {
+      "id": "qry_demo_02",
+      "title": "Validar protocolo de comunicaciones",
+      "question": "¿El sistema de control utilizará EtherNet/IP o Modbus TCP?",
+      "assignedTo": "Automatización del cliente (DEMO)",
+      "status": "open",
+      "resolution": "",
+      "closedAt": null,
+      "createdAt": "2026-09-22T15:00:00.000Z",
+      "createdBy": "Generador de datos mock",
+      "relatedChecklistIds": [
+        "r3-02"
+      ],
+      "evidence": [],
+      "messages": [],
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    },
+    {
+      "id": "qry_demo_03",
+      "title": "Definir tensión de control",
+      "question": "¿Cuál será la tensión de control del tablero?",
+      "assignedTo": "Cliente final (DEMO)",
+      "status": "closed",
+      "resolution": "Para el ejemplo se definió 110 VCA.",
+      "closedAt": "2026-09-22T16:00:00.000Z",
+      "createdAt": "2026-09-22T15:00:00.000Z",
+      "createdBy": "Generador de datos mock",
+      "relatedChecklistIds": [
+        "r3-03"
+      ],
+      "evidence": [],
+      "messages": [
+        {
+          "id": "msg_demo_01",
+          "at": "2026-09-22T16:00:00.000Z",
+          "author": "Cliente DEMO",
+          "body": "Para el ejemplo se definió 110 VCA.",
+          "evidence": []
+        }
+      ],
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    }
+  ],
+  "team": [
+    {
+      "id": "person_demo_01",
+      "name": "Camila Torres (DEMO)",
+      "role": "Gerente de proyecto",
+      "company": "CCM/VDF Demo",
+      "phone": "+56 9 0000 0001",
+      "email": "camila.torres@example.com",
+      "notes": "Contacto completamente ficticio para demostración.",
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    },
+    {
+      "id": "person_demo_02",
+      "name": "Diego Morales (DEMO)",
+      "role": "Ingeniero eléctrico",
+      "company": "Ingeniería Andina Demo",
+      "phone": "+56 9 0000 0002",
+      "email": "diego.morales@example.com",
+      "notes": "Contacto completamente ficticio para demostración.",
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    },
+    {
+      "id": "person_demo_03",
+      "name": "Sofía Rojas (DEMO)",
+      "role": "Especialista de automatización",
+      "company": "Minera Horizonte Demo",
+      "phone": "+56 9 0000 0003",
+      "email": "sofia.rojas@example.com",
+      "notes": "Contacto completamente ficticio para demostración.",
+      "updatedAt": "2026-09-22T15:00:00.000Z",
+      "updatedBy": "Generador de datos mock",
+      "manualLock": true
+    }
+  ],
+  "processedFiles": [],
+  "history": [
+    {
+      "id": "evt_demo_created",
+      "at": "2026-09-22T15:00:00.000Z",
+      "actor": "Generador de datos mock",
+      "origin": "manual",
+      "kind": "project.created",
+      "reason": "Creación de un proyecto ficticio para demostración.",
+      "changes": [
+        {
+          "path": "info",
+          "before": null,
+          "after": {
+            "client": "Minera Horizonte SpA (DEMO)",
+            "buyer": "Ingeniería Andina EPC (DEMO)",
+            "name": "Ampliación Planta Solar Atacama – Fase II (DEMO)",
+            "crm": "CRM-DEMO-2026-050",
+            "location": "Antofagasta, Chile",
+            "manager": "Camila Torres (DEMO)",
+            "driveUrl": "",
+            "startDate": "2026-09-15",
+            "targetDate": "2026-11-30",
+            "technology": "ccm_vdf",
+            "offerStatus": "review",
+            "offerReason": "Ejemplo ficticio al 50%; requiere completar antecedentes críticos antes de emitir una oferta firme."
+          }
+        }
+      ]
+    },
+    {
+      "id": "evt_demo_seeded",
+      "at": "2026-09-22T15:00:00.000Z",
+      "actor": "Generador de datos mock",
+      "origin": "manual",
+      "kind": "demo.seeded",
+      "reason": "Carga de datos mock para presentar el dashboard con 50% de avance.",
+      "changes": [
+        {
+          "path": "demo",
+          "before": null,
+          "after": {
+            "available": 72,
+            "applicable": 144,
+            "progress": 50,
+            "documents": 5,
+            "queries": 3,
+            "team": 3
+          }
+        }
+      ]
+    }
+  ],
+  "reviews": [],
+  "analysis": {
+    "provider": "",
+    "model": "",
+    "reviewedAt": "",
+    "summary": "",
+    "coverage": {
+      "folderUrl": "",
+      "recursive": false,
+      "discovered": 0,
+      "read": 0,
+      "reused": 0,
+      "unreadable": [],
+      "notes": ""
+    }
+  },
+  "reviewContext": null
+}

@@ -1,0 +1,1 @@
+Que la lógica permita evaluar en una carpeta cuales fueron los archivos procesados, de esa manera se puede evitar re-leer dentro de la carpeta drive, así ahorramos tiempo 

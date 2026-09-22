@@ -1,0 +1,10 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>Prueba móvil CCM/VDF</title><style>body{margin:0;font:12px Arial;background:#e5eaf0}pre{margin:10px}iframe{display:block;width:390px;height:1100px;border:0}</style><pre id="result">Cargando…</pre><iframe src="../index.html" title="Dashboard a 390 px"></iframe><script>
+document.querySelector('iframe').addEventListener('load',event=>{
+ const frame=event.target,w=frame.contentWindow,d=frame.contentDocument,checks=[];
+ const check=(condition,label)=>checks.push((condition?'PASS ':'FAIL ')+label);
+ check(d.documentElement.scrollWidth<=390,'Ancho de página '+d.documentElement.scrollWidth+' / 390');
+ d.querySelector('.mobile-menu').click();check(w.getComputedStyle(d.querySelector('.sidebar')).transform==='matrix(1, 0, 0, 1, 0, 0)'||d.body.classList.contains('menu-open'),'Menú móvil abre');d.querySelector('.sidebar-backdrop').click();check(!d.body.classList.contains('menu-open'),'Menú móvil cierra');
+ w.showDirectoryPicker=undefined;d.querySelector('#new-project').click();check(d.querySelector('#app-dialog').getBoundingClientRect().width<=390,'Formulario cabe en pantalla');d.querySelector('#close-dialog').click();
+ document.querySelector('#result').textContent=checks.join('\n');document.body.dataset.result=checks.some(x=>x.startsWith('FAIL'))?'FAIL':'PASS';
+});
+</script></html>
